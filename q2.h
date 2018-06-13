@@ -2,14 +2,12 @@
 using namespace std;
 #include "q4.h"
 #include "q5.h"
-class q2{
+class q2:public dt{
 public:
 	void question2(void)
 	{
-		cout << "is your teacher teach electronics related subject" << endl;
-		cout << "a:yes " << endl << "b:no";
-		cin >> ans;
-		if (ans == 'a')
+	b=elec.electronic();
+		if (b==0)
 		{
 			age.question4();
 		}
@@ -19,7 +17,9 @@ public:
 
 	}
 private:
-	char ans;
+
+	int b;
+	dt elec;
 	q4 age;
 	q5 abroad;
 };
